@@ -1,0 +1,12 @@
+[project]
+name = "model-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.0",
+    "flask-caching>=2.3.1",
+    "flask-limiter>=3.12",
+    "requests>=2.32.3",
+]
