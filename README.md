@@ -40,7 +40,7 @@ source .venv/bin/activate  # On Linux/Mac
 git clone https://github.com/your-username/ask-ai.git .
 
 # Install dependencies with uv
-uv install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 3. Configure environment variables (optional):
@@ -96,10 +96,8 @@ The model will be accessible at http://localhost:12434 by default, which is the 
 
 The app is designed to work with multiple server configurations:
 
-- Standard OpenAI format: `/v1/chat/completions`
 - Engines format: `/engines/llama.cpp/v1/chat/completions`
-- Simple format: `/chat/completions`
-- LocalAI format: `/api/chat`
+
 
 The app will try to auto-detect the correct endpoint format for your server.
 
